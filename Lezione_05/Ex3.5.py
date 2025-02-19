@@ -8,3 +8,11 @@ mylist:list= ["Totti", "Berlinguer", "Ghandi",]
 
 for invitati in mylist:
     print(f"sei invitato a cena {invitati}")
+
+print("Ghandi is not available")
+
+mylist:list= ["Totti", "Berlinguer", "Ghandi",]
+mylist.remove("Ghandi")
+print(mylist)
+mylist.append("Giulio Cesare")
+print(mylist)
