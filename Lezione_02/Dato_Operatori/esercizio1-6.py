@@ -10,4 +10,4 @@ totale += ordine["Patatine_Fritte"]
 totale += ordine["Cheesecake"]
 totale += ordine["Coca_Cola"]
 
-print(totale)
+print(f"Il totale del conto è {totale:.2f}")
