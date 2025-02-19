@@ -3,3 +3,9 @@
 
 name: str= "Alda Marini"
 print(name + " 'once said: L'uomo impara sempre a vivere quando è troppo tardi!'")
+
+#per le virgolette possiamo utilizzare diversi metodi
+
+name: str= "Alda Marini"
+print(f"{name} once said: '''"'uomo impara sempre a vivere quando è troppo tardi!"''')
+

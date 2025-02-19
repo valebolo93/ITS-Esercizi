@@ -6,3 +6,18 @@ print a message to that person letting them know you’re sorry you can’t invi
 • Print a message to each of the two people still on your list, letting them know they’re still invited.
 • Use del to remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an 
 empty list at the end of your program.'''
+
+mylist:list= ["Totti", "Berlinguer", "Ghandi",]
+mylist.insert(0,"Giulio Cesare")
+mylist.insert(2,"Tonio Cartonio")
+mylist.append("Leopardi")
+
+print(mylist)
+
+for invitati in mylist:
+    print(f"We have a bigger table, so you're invited {invitati}")
+
+print(mylist)
+print("You can invite just 2 people")
+mylist.pop("Leopardi")
+
