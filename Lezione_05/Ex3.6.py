@@ -11,6 +11,9 @@ mylist.insert(2,"Tonio Cartonio")
 mylist.append("Leopardi")
 
 print(mylist)
+print("We inform you that we've found a bigger table")
 
-for invitati in mylist:
-    print(f"We have a bigger table, so you're invited {invitati}")
+print(f"I would like to invite you to dinner {mylist[0]}")
+print(f"I would like to invite you to dinner {mylist[1]}")
+print(f"I would like to invite you to dinner {mylist[2]}")
+print(f"I would like to invite you to dinner {mylist[3]}")

@@ -8,16 +8,39 @@ print a message to that person letting them know you’re sorry you can’t invi
 empty list at the end of your program.'''
 
 mylist:list= ["Totti", "Berlinguer", "Ghandi",]
+
 mylist.insert(0,"Giulio Cesare")
 mylist.insert(2,"Tonio Cartonio")
 mylist.append("Leopardi")
-
 print(mylist)
 
-for invitati in mylist:
-    print(f"We have a bigger table, so you're invited {invitati}")
+mylist2:list[str]= ["Giulio Cesare", "Totti","Tonio Cartonio","Berlinguer", "Ghandi","Leopardi"]
+print(mylist2)
 
-print(mylist)
+
 print("You can invite just 2 people")
-mylist.pop("Leopardi")
+
+print(f"I'm sorry {mylist2[2]} but i can't invite you anymore!")
+mylist2.pop(2)
+
+print(f"I'm sorry {mylist2[3]} but i can't invite you anymore!")
+mylist2.pop(3)
+
+print(f"I'm sorry {mylist2[0]} but i can't invite you anymore!")
+mylist2.pop(0)
+
+print(f"I'm sorry {mylist2[1]} but i can't invite you anymore!")
+mylist2.pop(1)
+print(mylist2)
+
+
+print(f"{mylist2[0]} I confirm your invitation!")
+print(f"{mylist2[1]} I confirm your invitation!")
+
+del(mylist2)
+
+
+
+
+
 
