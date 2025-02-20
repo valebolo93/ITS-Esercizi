@@ -37,7 +37,15 @@ print(mylist2)
 print(f"{mylist2[0]} I confirm your invitation!")
 print(f"{mylist2[1]} I confirm your invitation!")
 
-del(mylist2)
+print(mylist2)
+mylist2:list= ["Totti","Leopardi"]
+
+del mylist2[0]
+
+print(mylist2)
+
+del mylist2[0]
+print(mylist2)
 
 
 
