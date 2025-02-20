@@ -8,7 +8,7 @@ for mezzi in mylist:
 else:
     print(f"Finished")
 
-#exercise
+#exercise modo alternativo
 mylist2:list[str]= ["motorbike", "car", "plane"]
 print(f"I would like to own a {mylist2[0]}")
 print(f"I would like to own a {mylist2[1]}")
