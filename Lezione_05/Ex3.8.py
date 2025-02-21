@@ -28,9 +28,14 @@ print(my_list_places)
 
 
 print("...............................................................................................................")
-
+#modo alternativo
 my_list_places:list[str]= ["Japan", "Australia", "Island", "Peru", "Egypt"]
 print(my_list_places)
+print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
 my_list_places.sort()
 print(my_list_places)
+print("''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
 
+my_list_places.sort(reverse=True)
+print(my_list_places)
+print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
