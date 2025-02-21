@@ -6,9 +6,13 @@
 • Print a new set of invitation messages, one for each person in your list.'''
 
 mylist:list= ["Totti", "Berlinguer", "Ghandi",]
+
 mylist.insert(0,"Giulio Cesare")
 mylist.insert(2,"Tonio Cartonio")
 mylist.append("Leopardi")
+
+meta = len(mylist)//2                      #per capire la metà esatta di una lista
+mylist.insert(meta, "Napoleone")
 
 print(mylist)
 print("We inform you that we've found a bigger table")

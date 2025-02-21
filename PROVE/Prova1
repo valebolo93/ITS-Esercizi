@@ -26,6 +26,10 @@ for eliminati in lista:
     lista.pop(0)
     print(f"{lista[0]} Sei stato eliminato")
    
+print(lista)
+
+
+   
 
 
 
