@@ -25,3 +25,12 @@ print(ordinata)
 
 ordinata = sorted(my_list_places)
 print(my_list_places)
+
+
+print("...............................................................................................................")
+
+my_list_places:list[str]= ["Japan", "Australia", "Island", "Peru", "Egypt"]
+print(my_list_places)
+my_list_places.sort()
+print(my_list_places)
+

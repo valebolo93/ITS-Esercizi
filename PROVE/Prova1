@@ -1,0 +1,33 @@
+album_figurine = 0
+def album_figurine():
+    return list(range(1,322))
+print(album_figurine())
+
+#modo alternativo
+
+def album_figurine():
+    for i in range(1,322):
+        print(i)
+
+
+#proviamo a togliere le figurine che ho
+figurine_trovate:int=[2,4,11,16,17,21,26,28,31,41,42,43,45,47,53,54,61,63,64,65,70,72,77,78,80,81,87]
+def figurine_trovate(album_figurine, figurine_trovate):
+    for figurine in album_figurine[:]:
+        if figurine not in figurine_trovate:
+            album_figurine.remove(figurine_trovate)                                 #copia della lista figurine per evitare problemi durante la rimozione
+
+print("''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
+            
+
+lista:list[str]=["A","B","C","D","E"]
+
+for eliminati in lista:
+    lista.pop(0)
+    print(f"{lista[0]} Sei stato eliminato")
+   
+
+
+
+
+
