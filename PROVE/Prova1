@@ -22,10 +22,14 @@ print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
 lista:list[str]=["A","B","C","D","E"]
 
-for eliminati in lista:
-    lista.pop(0)
+'''for eliminati in lista:   
     print(f"{lista[0]} Sei stato eliminato")
+    lista.pop(0)'''
    
+for i in range(len(lista)):
+   print(f"{lista[0]} Sei stato eliminato")
+   lista.pop(0)
+
 print(lista)
 
 
