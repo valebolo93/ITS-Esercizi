@@ -8,11 +8,22 @@ print a message to that person letting them know you’re sorry you can’t invi
 empty list at the end of your program.'''
 
 mylist:list= ["Totti", "Berlinguer", "Ghandi",]
+print(mylist)
 
 mylist.insert(0,"Giulio Cesare")
 mylist.insert(2,"Tonio Cartonio")
 mylist.append("Leopardi")
 print(mylist)
+
+print("..........................................................")
+print(f"you're invited to the Party {mylist[0]}")
+print(f"you're invited to the Party {mylist[1]}")
+print(f"you're invited to the Party {mylist[2]}")
+print(f"you're invited to the Party {mylist[3]}")
+print(f"you're invited to the Party {mylist[4]}")
+print(f"you're invited to the Party {mylist[5]}")
+
+print("'''''''''''''''''''''''''''''''''''''''''''''''''")
 
 mylist2:list[str]= ["Giulio Cesare", "Totti","Tonio Cartonio","Berlinguer", "Ghandi","Leopardi"]
 print(mylist2)
