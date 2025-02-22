@@ -28,7 +28,7 @@ print(my_list_places)
 
 
 print("...............................................................................................................")
-#modo alternativo
+#modo alternativo in cui però c'è solo una lista e non due
 my_list_places:list[str]= ["Japan", "Australia", "Island", "Peru", "Egypt"]
 print(my_list_places)
 print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
