@@ -14,18 +14,40 @@ x:float=>0
 if x<0
 break'''
 
-n:int= 5
-i=1
+'''numeri_reali:any=0
+numeri_interi:int=0
 x=0
-sum=0
-media=0
 
-while True:
-    if x>0:
-        x:int=int(input())
+while x>0:
+        numeri_reali=(input())
         sum=0
         media=0
-        media=sum+i
+        i=1
+        sum=sum+numeri_reali
+        media=sum//i
         i=i+1
+        else:
         if x<0:
-            break
+              print(f"programma terminato")'''
+
+
+numeri= float(input("inserire numeri: "))
+while True:
+    i=1
+    sum=0
+    media=0
+    numeri>=0
+    if numeri.is_integer():
+        print("Numero intero")
+        media+=numeri
+        i=i+1
+    else:
+        print("Numero decimale")
+       
+
+
+
+
+
+
+        
