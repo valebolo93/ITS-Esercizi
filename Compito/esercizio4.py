@@ -14,40 +14,45 @@ x:float=>0
 if x<0
 break'''
 
-'''numeri_reali:any=0
-numeri_interi:int=0
-x=0
+numeri:str= float(input("inserire numeri: "))
+media_numeri=0
 
-while x>0:
-        numeri_reali=(input())
-        sum=0
-        media=0
-        i=1
-        sum=sum+numeri_reali
-        media=sum//i
-        i=i+1
-        else:
-        if x<0:
-              print(f"programma terminato")'''
+n=[]
+n_interi=[]
 
 
-numeri= float(input("inserire numeri: "))
-while True:
-    i=1
-    sum=0
-    media=0
-    numeri>=0
-    if numeri.is_integer():
-        print("Numero intero")
-        media+=numeri
-        i=i+1
-    else:
-        print("Numero decimale")
+#ho inserito un ciclo per cui se i numeri sono positivi, vengono inseriti nella lista n
+
+while numeri>=0:
+    numeri:any= (input("inserire numeri: "))
+    print(type(numeri))
+    n.append(any(numeri))
+
+
+
+'''qui ho provato ad utilizzare la funzione integer per verificare se il numero fosse intero e aggiungerlo alla lista degli interi
+non riesco a risolvere questo errore: TypeError: '>=' not supported between instances of 'str' and 'int'''
+
+
+if numeri.is_integer():
+    n_interi.append(int(numeri))
+    media_numeri=sum(n_interi)/len(n_interi)
+    print(f"la tua media numeri sarà: {numeri}")
+
+#se i numeri inseriti sono negativi, il programma si blocca
+while numeri<0:
+    print("Hai inserito un valore negativo")
+    break
+
+
+#ho provato a calcolare il min e il max tra i valori all'interno della lista n
+if n:
+    min_num=min(n)
+    max_num=max(n)
+    print(type(numeri))
+
        
 
 
 
 
-
-
-        
