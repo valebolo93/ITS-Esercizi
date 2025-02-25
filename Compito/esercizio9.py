@@ -18,6 +18,7 @@ frazione:any= 4/1
 i=1
 risultati= [3.14, 3.141,3.1415,3.14159]
 lista:list[any]=[]
+results= 1
 
 #ho inserito il ciclo while per provare a salvare ogni nuovo risultato dentro la lista aggiornando il contatore
 
@@ -27,7 +28,7 @@ while True:
     lista.append(nuovo)
     i=i+1
     
-#auspicavo si bloccasse il ciclo una volta ottenuto il primo risultato
+#auspicavo si bloccasse il ciclo una volta ottenuto i risultati richiesti
     if nuovo== risultati[0]:
         break
     if nuovo== risultati[1]:
@@ -36,6 +37,7 @@ while True:
         break
     elif nuovo==risultati[3]:
         break
+
     
 
 
