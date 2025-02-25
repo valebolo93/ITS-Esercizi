@@ -16,47 +16,46 @@ break'''
 
 #qui ho inizializzato le mie variabili e creato delle liste dove poi andrò ad inserire i numeri
 numeri:str= float(input("inserire numeri: "))
-media_numeri=0
+media_numeri:float=0
 max_num=0
 min_num=0
-
+i=1
 n=[]
 n_interi=[]
 somma_interi=0
 
 
 #ho inserito una condizione per cui se i numeri sono positivi, vengono inseriti nella lista n
+while True:
+    if numeri>=0:
+        numeri:str= float(input("inserire numeri: "))
+        print(type(numeri))
+        n.append(numeri)
+        i=i+1
 
-if numeri>=0:
-    numeri:any= (input("inserire numeri: "))
-    print(type(numeri))
-    n.append(any(numeri))
-
-
-
-'''qui ho provato ad utilizzare la funzione integer per verificare se il numero fosse intero e aggiungerlo alla lista degli interi
-non riesco a risolvere questo errore: TypeError: '>=' not supported between instances of 'str' and 'int'''
-
-
-if numeri.is_integer():
-    n_interi.append(int(numeri))
-    somma_interi= somma_interi + numeri
-    media_numeri=sum(somma_interi)/len(n_interi)
-    print(f"la tua media numeri sarà: {media_numeri}")
+        
+        if numeri.is_integer():
+            n_interi.append(int(numeri))
+            somma_interi += numeri
+            media_numeri +=1
+            media_numeri = somma_interi/n_interi
+            i=i+1
+            print(f"la tua media numeri sarà: {media_numeri}")
 
 #se i numeri inseriti sono negativi, si aggiorna la lista n e il programma si blocca. Il break non lo posso utilizzare in questo caso
-if numeri<0:
-    n.append(int(numeri))
-    print("Hai inserito un valore negativo")
+            if numeri<0:
+                n.append(int(numeri))
+                print("Hai inserito un valore negativo")
+                break
     
 
 
 #ho provato a calcolare il min e il max tra i valori all'interno delle lista n e n_interi 
-if n:
-    min_num=min(n,n_interi)
-    max_num=max(n,n_interi)
-    print(f"Il numero più grande è {max_num}")
-    print(f"Il numero più grande è {min_num}")
+                if n:
+                    min_num=min(n,n_interi)
+                    max_num=max(n,n_interi)
+                    print(f"Il numero più grande è {max_num}")
+                    print(f"Il numero più grande è {min_num}")
 
        
 
