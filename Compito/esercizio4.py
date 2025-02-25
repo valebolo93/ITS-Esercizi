@@ -19,43 +19,42 @@ numeri:str= float(input("inserire numeri: "))
 media_numeri:float=0
 max_num=0
 min_num=0
-i=1
-n=[]
-n_interi=[]
+n=0
+n_interi=numeri
+n_decimali=numeri
 somma_interi=0
+i=1
 
-
-#ho inserito una condizione per cui se i numeri sono positivi, vengono inseriti nella lista n
+#ho inserito un ciclo per i numeri positivi. 
 while True:
     if numeri>=0:
         numeri:str= float(input("inserire numeri: "))
         print(type(numeri))
-        n.append(numeri)
         i=i+1
-
+#Se i numeri sono interi, l'iterazione permette di fare la media dei numeri, in caso contrario agisce l'else
         
         if numeri.is_integer():
-            n_interi.append(int(numeri))
-            somma_interi += numeri
-            media_numeri +=1
-            media_numeri = somma_interi/n_interi
+            n_interi=n_interi+numeri
+            somma_interi = somma_interi+n_interi
+            media_numeri = somma_interi/i
             i=i+1
             print(f"la tua media numeri sarà: {media_numeri}")
 
-#se i numeri inseriti sono negativi, si aggiorna la lista n e il programma si blocca. Il break non lo posso utilizzare in questo caso
+        else:
+            n_decimali= n_decimali+numeri
+
+
+#se i numeri inseriti sono negativi, il programma si blocca con il break
             if numeri<0:
-                n.append(int(numeri))
                 print("Hai inserito un valore negativo")
                 break
     
-
-
-#ho provato a calcolare il min e il max tra i valori all'interno delle lista n e n_interi 
-                if n:
-                    min_num=min(n,n_interi)
-                    max_num=max(n,n_interi)
-                    print(f"Il numero più grande è {max_num}")
-                    print(f"Il numero più grande è {min_num}")
+#Ho calcolato il min e il max tra i valori interi e decimali
+        if numeri:
+            min_num=min(n_interi,n_decimali)
+            max_num=max(n_interi,n_decimali)
+            print(f"Il numero più grande è {max_num}")
+            print(f"Il numero più piccolo è {min_num}")
 
        
 
