@@ -14,16 +14,20 @@ x:float=>0
 if x<0
 break'''
 
+#qui ho inizializzato le mie variabili e creato delle liste dove poi andrò ad inserire i numeri
 numeri:str= float(input("inserire numeri: "))
 media_numeri=0
+max_num=0
+min_num=0
 
 n=[]
 n_interi=[]
+somma_interi=0
 
 
-#ho inserito un ciclo per cui se i numeri sono positivi, vengono inseriti nella lista n
+#ho inserito una condizione per cui se i numeri sono positivi, vengono inseriti nella lista n
 
-while numeri>=0:
+if numeri>=0:
     numeri:any= (input("inserire numeri: "))
     print(type(numeri))
     n.append(any(numeri))
@@ -36,20 +40,23 @@ non riesco a risolvere questo errore: TypeError: '>=' not supported between inst
 
 if numeri.is_integer():
     n_interi.append(int(numeri))
-    media_numeri=sum(n_interi)/len(n_interi)
-    print(f"la tua media numeri sarà: {numeri}")
+    somma_interi= somma_interi + numeri
+    media_numeri=sum(somma_interi)/len(n_interi)
+    print(f"la tua media numeri sarà: {media_numeri}")
 
-#se i numeri inseriti sono negativi, il programma si blocca
-while numeri<0:
+#se i numeri inseriti sono negativi, si aggiorna la lista n e il programma si blocca. Il break non lo posso utilizzare in questo caso
+if numeri<0:
+    n.append(int(numeri))
     print("Hai inserito un valore negativo")
-    break
+    
 
 
-#ho provato a calcolare il min e il max tra i valori all'interno della lista n
+#ho provato a calcolare il min e il max tra i valori all'interno delle lista n e n_interi 
 if n:
-    min_num=min(n)
-    max_num=max(n)
-    print(type(numeri))
+    min_num=min(n,n_interi)
+    max_num=max(n,n_interi)
+    print(f"Il numero più grande è {max_num}")
+    print(f"Il numero più grande è {min_num}")
 
        
 
