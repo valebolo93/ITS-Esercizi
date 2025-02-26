@@ -12,6 +12,8 @@ prodotto=1
 #Ho utilizzato il ciclo for e calcolato il min e il max di tutti i numeri. Il +1 mi è stato suggerito perchè io non lo avevo messo.
 for i in range(min(n1,n2),max(n1,n2)+1):
     prodotto*=i
+    if n1 > n2:
+        print(prodotto)
     
 print(f"Il prodotto dei numeri compresi tra {n1} e {n2} è {prodotto}")
 

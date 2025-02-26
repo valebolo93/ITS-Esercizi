@@ -20,7 +20,7 @@ Incredibile! Cinque!
 Inserire il numero di neonati: 7
 Non ci credo! 7 bambini!'''
 
-numero_neonati:int = int(input())
+numero_neonati:int = int(input("Inserisci il numero neonati: "))
 
 match numero_neonati:
     case 1:
@@ -35,6 +35,13 @@ match numero_neonati:
         print("Incredibile!Cinque!")
     case _:
         print(f"Non ci credo! {numero_neonati} bambini!")
+
+#isnumeric("9")
+''''
+x = input
+
+help(str)
+help(int)'''
 
 
 
