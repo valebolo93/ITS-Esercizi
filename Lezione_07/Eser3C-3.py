@@ -47,20 +47,3 @@ match oggetti:
 
 #se vogliamo trasformare la lista in set per dare un qualsiasi ordine alle variabili:
 
-
-setogg= set(oggetti)
-
-match setogg:
-    case setogg if setogg.issubset[{"penna", "matita", "quaderno"}]:
-        print("Materiale scolastico")
-            
-    case["pane", "latte", "uova"]:
-        print("Prodotti alimentari")
-            
-    case["sedia", "tavolo", "armadio"]:
-        print("Mobili")
-            
-    case["telefono", "computer", "tablet"]:
-        print("Dispositivi elettronici")
-    case _:
-        print("Categoria sconosciuta")
