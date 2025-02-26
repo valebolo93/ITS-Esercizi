@@ -7,5 +7,8 @@ Use a for loop to print each number.'''
 for i in range(1,21,2):                        #1-21 sono i numeri della lista. Il 2 è lo step ovvero quanti numeri salto
     print(i)
 
-
-    
+#modo 2 con una lista vuota e ciclo for
+    lista:list=[]
+    for i in range(1,21,2):
+        lista.append(i)
+        print(lista)
