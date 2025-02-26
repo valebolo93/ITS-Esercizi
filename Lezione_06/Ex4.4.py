@@ -4,6 +4,10 @@
 
 lista_numeri= list(range(1,1000001))
 
+#modo 1
 for i in range(1,1000001):
     print(i)
-    
+
+#modo 2 
+for i in lista_numeri:
+    print(i)
