@@ -9,9 +9,10 @@ print(numeri_dispari)
 
 numeri_dispari.count(2)'''
 
-lista:list[range]=[1,21]
-print(list)
+#ciclo for per stampare numeri dispari
 
+for i in range(1,21,2): #1-21 sono i numeri della lista. Il 2 è lo step ovvero quanti numeri salto
+    print(i)
 
 
     
