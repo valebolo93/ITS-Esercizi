@@ -24,6 +24,8 @@ oggetti:list=[]
 for i in range(3):
     parole = input("Inserire 3 oggetti: ")
     oggetti.append(parole)
+
+
     
 match oggetti:
             
@@ -41,3 +43,24 @@ match oggetti:
     case _:
         print("Categoria sconosciuta")
         
+
+
+#se vogliamo trasformare la lista in set per dare un qualsiasi ordine alle variabili:
+
+
+setogg= set(oggetti)
+
+match setogg:
+    case setogg if setogg.issubset[{"penna", "matita", "quaderno"}]:
+        print("Materiale scolastico")
+            
+    case["pane", "latte", "uova"]:
+        print("Prodotti alimentari")
+            
+    case["sedia", "tavolo", "armadio"]:
+        print("Mobili")
+            
+    case["telefono", "computer", "tablet"]:
+        print("Dispositivi elettronici")
+    case _:
+        print("Categoria sconosciuta")
