@@ -17,3 +17,4 @@ for parola in parole:
     result.append(nuova)
 
 print(" ".join(result))   #da modo di concatenare le stringhe
+

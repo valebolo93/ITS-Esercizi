@@ -32,4 +32,6 @@ match gender:
         print(f"{nome}")
         print(f"{gender}: Femmina'")
     case _:
-        print("Errore")
+        print(f"Mi dispiace {nome}, non è possibile procedere con la generazione di un documento di identità")
+              
+
