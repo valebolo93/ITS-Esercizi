@@ -31,6 +31,7 @@ pesci=["squalo","trota","salmone","carpa"]
 animali:str = input("Inserire il nome di un animale: ")
 
 match animali:
+   
     case ["cane", "gatto","cavallo","elefante","leone"]:
         print("Mammiferi")
     case ["serpente","lucertola","tartaruga","coccodrillo"]:

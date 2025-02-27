@@ -6,27 +6,7 @@
 - Utente adulto (età ≥ 18) → "Accesso standard a tutti i servizi."
 - Utente minorenne (età < 18) → "Accesso limitato! Alcune funzionalità sono bloccate."
 - Ospite → "Accesso ristretto! Solo visualizzazione dei contenuti."
-- Ruolo non riconosciuto → "Attenzione! Ruolo non riconsciuto! Accesso Negato!"
-Expected Output:
-Digitare nome dell'utente: Mario Rossi
-Digitare ruolo dell'utente: admin
-Digitare l'età dell'utente: 30
-Output: Accesso completo a tutte le funzionalità.
-- - - - - - - - - - - - - - - - - - - - - - - - - - -
-Digitare nome dell'utente: Giulia Bianchi
-Digitare ruolo dell'utente: utente
-Digitare l'età dell'utente: 16
-Output: Accesso limitato! Alcune funzionalità sono limitate!
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Digitare nome dell'utente: Sara Neri
-Digitare ruolo dell'utente: vip
-Digitare l'età dell'utente: 22
-Output: Attenzione! Ruolo non riconosciuto! Accesso Negato!
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Digitare nome dell'utente: Luca Verdi
-Digitare ruolo dell'utente: moderatore
-Digitare l'età dell'utente: 25
-Output: Salve Luca Verdi! Può gestire i contenuti ma non modificare le impostazioni.'''
+- Ruolo non riconosciuto → "Attenzione! Ruolo non riconsciuto! Accesso Negato!"'''
 #help(dict)
 
 nome=input("Inserire il nome: ")
@@ -39,7 +19,7 @@ match dizionario:
     case {"nome":nome, "ruolo":"admin", "eta":eta}:
         print("Accesso completo a tutte le funzionalità.")
     case {"nome":nome, "ruolo":"moderatore", "eta":eta}:
-        print("Può gestire i contenuti ma non modificare le impostazioni")
+        print(f"Salve {nome}! Può gestire i contenuti ma non modificare le impostazioni")
     case {"nome":nome, "ruolo":"utente", "eta":eta}:
         if eta >=18:
             print("Accesso standard a tutti i servizi")
