@@ -44,12 +44,9 @@ match dizionario:
         if eta >=18:
             print("Accesso standard a tutti i servizi")
         else:
-            print("Accesso limitato! Alcune funzionalità sono bloccate")
-            
-            
+            print("Accesso limitato! Alcune funzionalità sono bloccate")        
     case {"nome":nome, "ruolo":"ospite", "eta":eta}:
         print("Accesso completo a tutte le funzionalità.")
-
     case _:
         print("Attenzione! Ruolo non riconsciuto! Accesso Negato")
     
