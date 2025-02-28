@@ -32,9 +32,9 @@ animali:str = input("Inserire il nome di un animale: ")
 
 match animali:
    
-    case ["cane", "gatto","cavallo","elefante","leone"]:
+    case ("cane"|"gatto"|"cavallo"|"elefante"|"leone"):
         print("Mammiferi")
-    case ["serpente","lucertola","tartaruga","coccodrillo"]:
+    case ("serpente","lucertola","tartaruga","coccodrillo"):
         print("Rettili")
     case ["aquila","pappagallo","gufo","falco"]:
         print("Uccelli")
