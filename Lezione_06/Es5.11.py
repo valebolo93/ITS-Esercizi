@@ -11,74 +11,43 @@ evaluates to True or False.
 • Create at least 10 tests. Have at least 5 tests evaluate to True and another
 5 tests evaluate to False.'''
 
-parole:str= input("Inserisci tipologia macchina,moto,occhiali,profumo,telefono:  ")
-car:str= "Ferrari"
 
-if parole=="Ferrari":
-        print(f"I predict"+ car == "Ferrari")
-else:
-        
-        print(f"I predict"+ car == 'audi')
+car:str="Ferrari"
+moto:str="Ducati"
+nome:str="Valentina"
+squadra:str="AsRoma"
+citta:str="Roma"
 
-'''moto:str= "Ducati"
-print(f"Is moto== 'Ducati'? I predict True.")
-print(moto == 'Ducati')
-print("\nIs moto == 'Kawasaki'? I predict False.")
-print(moto == 'Kawasaki')
+if car==car:
+    print("Is car == 'Ferrari? I predict True.")
+    print(car==car)
+    print("\nIs car == 'audi'? I predict False.")
+print(car !=car)
 
-profumo:str= "Lu Jo"
-print(f"Is profumo== 'Lu Jo? I predict True.")
-print(profumo == 'Lu Jo')
-print("\nIs profumo== 'Lu Jo'? I predict False.")
-print(profumo == 'D&G')
+if moto==moto:
+    print("Is moto == 'Ducati? I predict True.")
+    print(moto==moto)
+    print("\nIs moto == 'Honda'? I predict False.")
+print(moto !=moto)
 
-occhiali:str="Rayban"
-print(f"Is occhiali== 'Rayban'? I predict True.")
-print(occhiali == 'Guess')
-print("\nIs occhiali == 'Guess'? I predict False.")
-print(occhiali== 'Guess')
+if nome==nome:
+    print("Is nome == 'Valentina? I predict True.")
+    print(nome==nome)
+    print("\nIs nome == 'Andrea'? I predict False.")
+print(nome !=nome)
 
-telefono:str="Iphone"
-if telefono=="Iphone":
-        print(f"I predict {telefono} it's True.")
+if squadra==squadra:
+    print("Is squadra == 'AsRoma? I predict True.")
+    print(nome==nome)
+    print("\nIs squadra == 'Milan'? I predict False.")
+print(squadra !=squadra)
 
-print("\nIs telefono == 'Samsung'? I predict False.")
-print(telefono== 'Samsung')
+if citta==citta:
+    print("Is citta == 'Roma? I predict True.")
+    print(nome==nome)
+    print("\nIs citta == 'Milano'? I predict False.")
+print(citta !=citta)
 
 
 
-if parole in car is True:
-        print(f"I predict {parole} it's True")
-
-        
-else:
-        print(f"I predict {car} it's False")
-        
-
-if parole in moto:
-        print(f"I predict {moto} it's True")
-          
-else:
-        print(f"I predict {moto} it's False")
-        
-
-if parole in profumo:
-        print(f"I predict {profumo} it's True")
-           
-else:
-        print(f"I predict {profumo} it's False")
-
-if parole in occhiali:
-        
-        print(f"I predict {occhiali} it's True")
-           
-else:
-        print(f"I predict{occhiali} it's False")
-
-if parole in telefono:
-        print(f"I predict {telefono} it's True")
-           
-else:
-        print(f"I predict {telefono} it's False")'''
-        
 
