@@ -18,6 +18,7 @@ nome:str="Valentina"
 squadra:str="AsRoma"
 citta:str="Roma"
 
+#Conditional Tests
 if car==car:
     print("Is car == 'Ferrari? I predict True.")
     print(car==car)
