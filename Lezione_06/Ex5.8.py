@@ -4,6 +4,7 @@ Loop through the list, and print a greeting to each user.
 • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
 • Otherwise, print a generic greeting, such as Hello Jaden, thank you for logging in again.'''
 
+
 name:list=["admin","Vale","Stefano","Sofi","Mik"]
 
 for i in name:
