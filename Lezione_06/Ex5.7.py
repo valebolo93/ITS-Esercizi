@@ -12,3 +12,16 @@ if frutta in favourite_fruits:
     print("You really like Peach")
 if frutta != favourite_fruits:
     print(f"You don't like {frutta}")
+
+print("--------------------------------------------------------------------------------------------------------------")
+
+if favourite_fruits== "Strawberry":
+    print("You really like Strawberry!")
+elif favourite_fruits== "Pineapple":
+    print("You really like Pineapple!")
+elif favourite_fruits== "Peach":
+    print("You really like Peach!")
+elif favourite_fruits=="Apple":
+    print()
+else:
+    print()
