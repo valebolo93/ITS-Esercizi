@@ -11,15 +11,22 @@ from typing import Any
 
 current_users:list=["Boss","Vale","Stefano","Sofi","Mik"]
 new_users:list=["Vale", "Bill","Leo", "Sofi","Jim"]
+current_users_lower=current_users
+new_users_lower=new_users
 
+
+'''for nomi in current_users:
+    current_users_lower.append(nomi)
+
+print(current_users_lower)
+for nomi in new_users:
+    new_users_lower.append(nomi)
+print(new_users_lower)'''
 
 for nomi in new_users:
-    if nomi in current_users:
+    if nomi in current_users_lower:
         print(f"The '{nomi}' username has already been used")
     else:
         print(f" {nomi} is avalaible")
 
-current_users1=current_users
 
-for lower in current_users1:
-    print(lower.lower())
