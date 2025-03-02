@@ -7,13 +7,10 @@ Loop through the list, and print a greeting to each user.
 name:list=["admin","Vale","Stefano","Sofi","Mik"]
 
 for i in name:
-    if name[1:]:
         print(f"Hello {name[1]}, thank you for logging in again")
         print(f"Hello {name[2]}, thank you for logging in again")
         print(f"Hello {name[3]}, thank you for logging in again")
         print(f"Hello {name[4]}, thank you for logging in again")
-    break
-
-if name[1]:
-    print(f"Hello {name[0]}  would you like to see a status report?")
+        print(f"Hello {name[0]}  would you like to see a status report?")
+        break
    
