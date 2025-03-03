@@ -34,11 +34,11 @@ match animali:
    
     case ("cane"|"gatto"|"cavallo"|"elefante"|"leone"):
         print("Mammiferi")
-    case ("serpente","lucertola","tartaruga","coccodrillo"):
+    case ("serpente"|"lucertola"|"tartaruga"|"coccodrillo"):
         print("Rettili")
-    case ["aquila","pappagallo","gufo","falco"]:
+    case ["aquila"|"pappagallo"|"gufo"|"falco"]:
         print("Uccelli")
-    case ["squalo","trota","salmone","carpa"]:
+    case ["squalo"|"trota"|"salmone"|"carpa"]:
         print("Pesci")
     case _:
         print("Non so in quale categoria classificare ")
