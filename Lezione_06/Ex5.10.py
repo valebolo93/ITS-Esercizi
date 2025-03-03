@@ -10,7 +10,7 @@ If a username has not been used, print a message saying that the username is ava
 from typing import Any
 
 current_users:list=["Boss","Vale","Stefano","Sofi","Mik"]
-new_users:list=["Vale", "Bill","Leo", "Sofi","Jim"]
+new_users:list=["VALE", "Bill","Leo", "Sofi","Jim"]
 current_users_lower=current_users
 new_users_lower=new_users
 
