@@ -24,24 +24,101 @@ Tenere in considerazione il fatto che alcuni animali tra quelli specificati poss
 
 Suggeirmento: può essere utile per coprire tutti i possibili casi implementare istruzioni match annidate.'''
 
+mammiferi=["cane", 
+           "gatto",
+           "cavallo",
+           "elefante",
+           "leone",
+           "delfino",
+           "balena"]
+rettili=["serpente",
+         "lucertola",
+         "tartaruga",
+         "coccodrillo"]
+uccelli=["aquila",
+         "pappagallo",
+         "gufo",
+         "falco",
+           "gallina",
+           "tacchino",
+           "anatra"]
+pesci=["squalo",
+       "trota",
+       "salmone",
+       "carpa"]
 animali:str = input("Inserire il nome di un animale: ")
-habitat:str = input("Inserire habitat tra acqua, aria e terra: ")
-animal_type:str= input("Inserire categoria animale tra mammiferi,rettili,uccelli e pesci: ")
-dizionario:dict[any]= {"nome animale":animali,"categoria":animal_type, "habitat": habitat}
-rettili:list= ["serpente", "lucertola", "tartaruga", "coccodrillo"]
-mammiferi:list=["cane","gatto""cavallo","elefante","leone","balena","delfino"]
-uccelli:list= ["aquila", "pappagallo", "gufo", "falco", "cigno", "anatra", "gallina", "tacchino"]
-pesci:list=["squalo","trota","salmone","capra"]
+habitat:str=input("Inserire l'habitat tra acqua,aria e terra: ")
+habitat_type:list=["acqua",
+                   "terra",
+                   "aria"]
+habitat_acqua:list=["tartaruga", "coccodrillo","squalo","trota","salmone","carpa","delfino","balena","cigno","anatra"]
+habitat_terra:list=["cane","gatto","cavallo","elefante","leone","serpente","lucertola","gallina","tartaruga","anatra","cigno"]
+habitat_cielo:list=["aquila","pappagallo","gufo","falco"]
+unkwown_habitat:list=[]
 
-match dizionario:
+
+
+match animali:
    
-    case {"nome animale":animali,"categoria":animal_type, "habitat": habitat}:
-            print("Mammiferi")
+    case ("cane"|"gatto"|"cavallo"|"elefante"|"leone"|"balena"|"delfino"):
+        print("Mammiferi")
+        animal_type = "Mammiferi"
+        
     case ("serpente"|"lucertola"|"tartaruga"|"coccodrillo"):
         print("Rettili")
-    case ("aquila"|"pappagallo"|"gufo"|"falco"|"cigno"|"anatra"|"gallina"|"tacchino"):
+        animal_type = "Rettili"
+    case ["aquila"|"pappagallo"|"gufo"|"falco"|"gallina"|"tacchino"|"anatra"]:
         print("Uccelli")
-    case ("squalo"|"trota"|"salmone"|"carpa"):
+        animal_type = "Uccelli"
+    case ["squalo"|"trota"|"salmone"|"carpa"]:
         print("Pesci")
+        animal_type= "Pesci"
     case _:
         print("Non so in quale categoria classificare ")
+
+if animali in mammiferi and animali in habitat_terra:
+    print(f"{animali} può vivere nell'habitat terra")
+elif animali in mammiferi and animali in habitat_acqua:
+    print(f"{animali} può vivere nell'habitat acqua")
+elif animali in rettili and animali in habitat_terra:
+    print(f"{animali} vive in habitat terra")
+elif animali in rettili and animali in habitat_acqua:
+    print(f"{animali} vive in habitat terra e habitat acqua")
+elif animali in rettili and animali in habitat_terra:
+    print(f"{animali} vive in habitat terra e habitat acqua")
+elif animali in uccelli and animali in habitat_cielo:
+    print(f"{animali} vive in habitat cielo")
+elif animali in uccelli and animali in habitat_acqua:
+    print(f"{animali} vive in habitat cielo e habitat acqua")
+elif animali in uccelli and animali in habitat_terra:
+    print(f"{animali} vive in habitat cielo e habitat terra")
+elif animali in pesci and animali in habitat_acqua:
+    print(f"{animali} vive in habitat acqua")
+else:
+    print(f"Animale o habitat non riconosciuti")
+
+
+
+
+
+'''if animali not in mammiferi and animali not in rettili and animali not in uccelli and animali not in pesci:
+    print("Errore")
+    
+if animali not in habitat_acqua and animali not in habitat_cielo and not habitat_terra:
+    unkwown_habitat.append(habitat)
+    print(unkwown_habitat)
+
+
+if mammiferi in  habitat_terra:
+    print(f"{animali} vive nell'habitat terra")
+    
+if rettili[0:2]in habitat_terra:
+    print(f"{animali} vive nell'habitat terra")
+elif rettili[2:3]:
+    print(f"{animali} può vivere in habitat terra e acqua")
+if uccelli in habitat_cielo:
+        print(f"{animali} vive nell'habitat cielo")
+else:
+        print(f"{animali} non può vivere in questo habitat")'''
+        
+    
