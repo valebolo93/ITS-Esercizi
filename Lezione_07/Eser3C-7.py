@@ -50,3 +50,28 @@ print(f" Totale Croce: {croce}")
 print(f"Percentuale croce: {percentuale_croce:.2f}")
 print(f" Totale Testa: {testa}")
 print(f"Percentuale Testa: {percentuale_testa:.2f}")
+
+
+#modo alternativo
+
+testa:int = 0
+croce:int = 0
+
+while testa+croce < 8:
+    lanci:str = input("Lancia una moneta e inserisci se esce testa o croce utilizzando t per testa e c per croce:")
+    match lanci:
+
+        case "t"|"T":           
+            testa += 1
+        case "c"|"C":            
+            croce += 1
+        case _:
+            print("Lancio non valido")
+print(f"Totale \"testa\": {testa}")
+
+print(f"Percentuale \"testa\": {testa/8*100:.2f}%")
+
+
+print(f"Totale \"croce\": {croce}")
+
+print(f"Percentuale \"croce\": {croce/8*100:.2f}%")
