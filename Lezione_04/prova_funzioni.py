@@ -35,3 +35,5 @@ print(f"Sum from 35 to 50 is {sumInRange(35,50)}")
 
 #se salvo le variabili:
 mysum= sumInRange(1,10)
+
+
