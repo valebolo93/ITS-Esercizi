@@ -23,7 +23,7 @@ print(f"la somma è {sum}")
 
 #modo con funzioni
 
-def sumInRange(a:int, b:int):
+def sumInRange(a:int, b:int)->int:
     result:int = 0
     for i in range(a, b+1):
         result = result + i
