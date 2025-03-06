@@ -5,7 +5,7 @@ Call the function, making sure to include a book title as an argument in the fun
 titolo = "Le pagine della nostra vita"
  
 def favourite_book(a:str):
-    a == titolo
-    print(titolo)
+    titolo= a
+    print(a)
 
 favourite_book(titolo)
