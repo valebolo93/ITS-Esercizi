@@ -2,10 +2,6 @@
 The function should print a message, such as "One of my favorite books is Alice in Wonderland". 
 Call the function, making sure to include a book title as an argument in the function call.'''
 
-titolo = "Le pagine della nostra vita"
- 
-def favourite_book(a:str):
-    titolo= a
-    print(a)
-
-favourite_book(titolo)
+def favourite_book(titolo:str):
+    return f"Il mio libro preferito è {titolo}"
+print(favourite_book("Le pagine della nostra vita"))
