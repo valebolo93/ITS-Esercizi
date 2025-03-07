@@ -17,7 +17,7 @@ Inserisci il giorno: 5
 Inserisci il mese: 3
 Output: Nessuna festività importante in questa data.'''
 
-data: tuple[int,int] = (int(input("inserire giorno: ")), int(input("inserire mese: ")))
+data:tuple[int,int] = (int(input("inserire giorno: ")), int(input("inserire mese: ")))
 
 match data:
     case (1,1):
