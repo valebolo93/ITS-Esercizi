@@ -14,6 +14,5 @@ while True:
     break
 
 
-
 print(make_album(insert_album,insert_artist))
          
