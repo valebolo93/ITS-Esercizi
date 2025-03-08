@@ -5,7 +5,6 @@ lista:list=["Come va?",
             "Forza Roma",
             "W l'estate"]
 
-
 def show_messages(lista):
     return lista
 
