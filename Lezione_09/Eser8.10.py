@@ -7,13 +7,13 @@ lista:list=["Come va?",
             "Ti voglio bene",
             "Forza Roma",
             "W l'estate"]
-
+#lista nuova vuota
 sent_messages:list=[]
 
 
 
-#funzione
-def send_messages(lista):
+#funzione che mi stampa ogni singolo messaggio
+def send_messages(lista)->None:
     return lista
 print(send_messages(lista[0]))
 print(send_messages(lista[1]))
@@ -21,6 +21,7 @@ print(send_messages(lista[2]))
 print(send_messages(lista[3]))
 
 print("----------------------------------------")
+#ciclo for per aggiungere gli elementi della lista nella lista sent messages
 for items in lista:
     sent_messages.append(items)
     
