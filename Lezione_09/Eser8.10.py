@@ -7,18 +7,30 @@ lista:list=["Come va?",
             "Ti voglio bene",
             "Forza Roma",
             "W l'estate"]
-called_messages:list=[]
+
+sent_messages:list=[]
 
 
 
 #funzione
 def send_messages(lista):
-    return called_messages.append(items)
+    return lista
+print(send_messages(lista[0]))
+print(send_messages(lista[1]))
+print(send_messages(lista[2]))
+print(send_messages(lista[3]))
+
+print("----------------------------------------")
+for items in lista:
+    sent_messages.append(items)
+    
 
 for items in lista:
-    called_messages.append(items)
+    lista.pop(0)
+    lista.pop(0)
 
-print(called_messages)
+print(sent_messages)
+print("----------------------------------------")
 print(lista)
 
 
