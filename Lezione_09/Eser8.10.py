@@ -13,7 +13,7 @@ called_messages:list=[]
 
 #funzione
 def send_messages(lista):
-    return called_messages.append[0](items)
+    return called_messages.append(items)
 
 for items in lista:
     called_messages.append(items)
