@@ -11,9 +11,9 @@ lista:list=["Come va?",
 sent_messages:list=[]
 
 
-
 #funzione che mi stampa ogni singolo messaggio
-def send_messages(lista)->None:
+def send_messages(lista) -> None:
+    
     return lista
 print(send_messages(lista[0]))
 print(send_messages(lista[1]))
