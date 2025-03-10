@@ -8,7 +8,10 @@ lista:list=["Come va?",
 def show_messages(lista):
     return lista
 
-print(lista[0])
-print(lista[1])
-print(lista[2])
-print(lista[3])
+
+for items in lista:
+    print(show_messages(lista[0]))
+    print(show_messages(lista[1]))
+    print(show_messages(lista[2]))
+    print(show_messages(lista[3]))
+    break
