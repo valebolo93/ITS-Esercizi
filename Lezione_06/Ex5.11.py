@@ -4,9 +4,18 @@
 • Use an if-elif-else chain inside the loop to print the proper ordinal ending for each number. 
 Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.'''
 
-
-ordinal_numbers:list = [1,2,3,4,5,6,7,8,9]
-
+#lista
+ordinal_numbers:list = [1
+                        ,2
+                        ,3
+                        ,4
+                        ,5
+                        ,6
+                        ,7
+                        ,8
+                        ,9
+                        ]
+#loop for
 for i in ordinal_numbers:
     if i == 1:
         print(f"{i}th!")
