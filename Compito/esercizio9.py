@@ -31,7 +31,6 @@ def computePI(approximation_value:float,decimal_digits) -> int:
 
     return terms
 
-
 # calling computePI function to determine how many terms are needed to obtain 3.14 ( 152 terms)
 print(f"{computePI(3.14, 2)} terms are needed to compute a value of pi approximated to 3.14!")
 # calling computePI function to determine how many terms are needed to obtain 3.141 ( 916 terms)
