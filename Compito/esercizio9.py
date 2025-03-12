@@ -11,35 +11,32 @@ modificare l'algoritmo, mostrando in output quanti termini della serie devono es
 modificare l'algoritmo, mostrando in output quanti termini della serie devono essere usati per ottenere il valore di π ≈ 3.14159.
 Nota: Il programma deve iterare fino a raggiungere ciascuna delle soglie indicate, contando il numero di termini necessari.'''
 
-#Ho inziatilizzato le varie variabili, inserito una lista vuota dove inserire i risultati e inserito un contatore
-denominatore:any= 1
-numeratore:any= 4
-frazione:any= 4/1
-i=1
-risultati= [3.14, 3.141,3.1415,3.14159]
-lista:list[any]=[]
-results= 1
+def computePI(approximation_value:float,decimal_digits) -> int:
 
-#ho inserito il ciclo while per provare a salvare ogni nuovo risultato dentro la lista aggiornando il contatore
+    terms:int=0
+    pi:float=0
+    i:int=0
 
-while True:
-    denominatore+= 2
-    nuovo:any= frazione / denominatore
-    lista.append(nuovo)
-    i=i+1
-    
-#auspicavo si bloccasse il ciclo una volta ottenuto i risultati richiesti
-    if nuovo== risultati[0]:
-        break
-    if nuovo== risultati[1]:
-        break
-    elif nuovo==risultati[2]:
-        break
-    elif nuovo==risultati[3]:
-        break
+    while round(pi,decimal_digits) !=approximation_value:
 
-    
+        if i%2==0:
+            pi = pi +4/(2*i +1)
+
+        else:
+            pi = pi -4/(2*i+1)
+
+        terms = terms + 1
+
+        i = i + 1
+
+    return terms
 
 
-
-
+# calling computePI function to determine how many terms are needed to obtain 3.14 ( 152 terms)
+print(f"{computePI(3.14, 2)} terms are needed to compute a value of pi approximated to 3.14!")
+# calling computePI function to determine how many terms are needed to obtain 3.141 ( 916 terms)
+print(f"{computePI(3.141, 3)} terms are needed to compute a value of pi approximated to 3.141!")
+# calling computePI function to determine how many terms are needed to obtain 3.145 ( 7010 terms)
+print(f"{computePI(3.1415, 4)} terms are needed to compute a value of pi approximated to 3.1415!")
+# calling computePI function to determine how many terms are needed to obtain 3.1459 ( 130'658 terms)
+print(f"{computePI(3.14159, 5)} terms are needed to compute a value of pi approximated to 3.14159!")
