@@ -6,6 +6,6 @@ from module_name import function_name as fn
 import module_name as mn
 from module_name import *'''
 
-def function_name(name:str):
-    return "Valentina"
+def function_name(name:str = "Valentina"):
+    return f"My name is {name}"
 
