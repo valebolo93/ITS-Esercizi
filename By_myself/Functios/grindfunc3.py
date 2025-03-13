@@ -2,16 +2,16 @@
 contenente solo le parole che iniziano con una lettera specificata.'''
 
 from typing import Any
-from typing import List
 
-lista:list=[]
+lista_vecchia:list=["Sole","cane", "ancora", "aria", "aspro"]
 
-def function_list(lista:list,lettera:str="a") -> list:
-    for stringhe in lista:
-        if lista[0] == lettera:
-         lista.append(stringhe)
-        return lettera in lista
+def function_list(lista_vecchia:list, lettera:str="a") -> list:
+    lista_nuova:list = []
+    for parola in lista_vecchia:
+        if parola[0] == lettera:
+            lista_nuova.append(parola)
+    return lista_nuova
         
 
-function_list("Valentina","solo")
-print(function_list(list))
+lista_nuova = function_list(lista_vecchia, "a")
+print(lista_nuova)
