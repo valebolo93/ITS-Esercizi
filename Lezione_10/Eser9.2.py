@@ -24,4 +24,5 @@ print(restaurant1.cuisin_type)
 print(restaurant2.restaurant_name)
 print(restaurant2.cuisin_type)
 
+
 restaurant.descrive_restaurant()

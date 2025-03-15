@@ -5,6 +5,7 @@ Make another method called greet_user() that prints a personalized greeting to t
 Create several instances representing different users, and call both methods for each user.'''
 
 class User:
+    
     def __init__(self, first_name:str,last_name:str):
         self.first_name = first_name    
         self.last_name = last_name

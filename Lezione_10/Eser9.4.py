@@ -1,11 +1,12 @@
-'''Start with your program from Exercise 9-1. Add an attribute called number_served 
-with a default value of 0. Create an instance called restaurant from this class. 
-Print the number of customers the restaurant has served, and then change this value and print it again. 
-Add a method called set_number_served() that lets you set the number of customers that have been served. 
-Call this method with a new number and print the value again. Add a method called increment_number_served()
- that lets you increment the number of customers who’ve been served. Call this method with any number you 
- like that could represent 
-how many customers were served in, say, a day of business. '''
+'''Inizia con il tuo programma dall'esercizio 9-1. Aggiungere un attributo chiamato numero-servito 
+con un valore predefinito di 0. Crea un'istanza chiamata ristorante di questa classe.
+ Stampa il numero di clienti che il ristorante ha servito, quindi cambia questo valore e stampalo di nuovo. 
+ Aggiungere un metodo chiamato set-number-served() che consente di impostare il numero di clienti che sono stati serviti. 
+ Chiama questo metodo con un nuovo numero e stampa nuovamente il valore.
+Aggiungere un metodo chiamato incremento-number-served() che consente di aumentare il 
+numero di clienti che sono stati serviti. Chiama questo metodo con qualsiasi numero che 
+ti piace potrebbe rappresentare quanti clienti sono stati serviti,
+ ad esempio, in un giorno di lavoro.'''
 
 class Restaurant:
 
@@ -13,13 +14,21 @@ class Restaurant:
         self.restaurant_name=restaurant_name
         self.cuisin_type=cuisin_type
         self.number_served = number_served
+        self.numberserved1 = 50
+        self.numberserved2=70
+        print(f"Inizialmente il numero di persone servite è: {self.number_served}")
 
     def set_number_saved(self):
-        print(f" Numero persone servite: {self.number_served}")
-    
+        print(f"Nel corso della giornata il numero persone servite è: {self.numberserved1}")
+
+
+        
     def increment_number_served(self):
+        print(f"A fine giornata i clienti serviti sono: {self.numberserved2}" )       
+
+restaurant:Restaurant = Restaurant("Da Gigi","Romana",20)
 
 
-restaurant:Restaurant = Restaurant("Da Gigi","Romana")
 
 restaurant.set_number_saved()
+restaurant.increment_number_served()
