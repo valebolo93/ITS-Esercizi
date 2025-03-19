@@ -10,6 +10,10 @@ class Restaurant:
         self.restaurant_name=restaurant_name
         self.cuisin_type=cuisin_type
 
+    def display(self):
+        return f"{self.restaurant_name, self.cuisin_type}"
+            
+
 
 class IceCreamStand(Restaurant):
     def __init__(self,restaurant_name:str,cuisin_type:str,flavors:list):
@@ -25,4 +29,10 @@ class IceCreamStand(Restaurant):
 icecream:IceCreamStand=IceCreamStand("Ice cream stand", "gelateria", ["Pistacchio","Fragola","Ciocciolato"])
 
 icecream.display_flavors()
+
+#per verificare che entrambe le classi funzionino
+
+icecream1:Restaurant=Restaurant("Icecream it", "gelato")
+icecream1.display()
+print(icecream1.display())
 
