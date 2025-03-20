@@ -14,3 +14,8 @@ class Persona:
         self.last_name:str=last_name
         self.age:int=age
         
+    #funzione che mostri in output i dati relativi ad una persona
+
+    def displayData(self)->None:
+        print(f"Nome:{self.name},\nCognome:{self.last_name},\nEtà:{self.age}")
+    
