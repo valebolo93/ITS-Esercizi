@@ -18,5 +18,22 @@ class Persona:
         self.last_name=last_name
 
     def setage(self,age:int)->None:
-        self.age:int=age
-        
+        if age<0 or age>130:
+            self.age = 0
+        else:
+            self.age = age
+
+    #funzione che consente d ritornare il valore di self.name
+
+    def getName(self)->str:
+        return self.name
+    
+    #funzione che consente di ritornare il valore di self.lastname
+
+    def getlastname(self)->str:
+        return self.last_name
+    
+    #funzione che consente di tornare il valore di self.age
+
+    def getAge(self)->int:
+        return self.age

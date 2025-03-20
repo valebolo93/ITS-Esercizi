@@ -42,3 +42,7 @@ vb.setage(32)
 print("----------------------------------------")
 
 vb.displayData()
+
+print("----------------------------------")
+
+print(vb.getName(),vb.getlastname(),vb.getAge())
