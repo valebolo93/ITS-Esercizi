@@ -13,4 +13,7 @@ def vowelsCounter(s:str) ->int:
     else:
         return vowelsCounter(s[1:])
     
-print(f"La stringa \"\" contiene {vowelsCounter('')} vocali")
+print(f"La stringa  contiene {vowelsCounter('')} vocali")
+
+
+print(vowelsCounter("Ciao"))
