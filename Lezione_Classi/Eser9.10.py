@@ -4,3 +4,7 @@
  statement is working properly.'''
 
 from Restaurant_9_2 import Restaurant
+
+nome_ristorante:Restaurant=Restaurant("Da Cesare","Cucina Romana")
+
+nome_ristorante.open_restaurant()
