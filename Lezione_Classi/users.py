@@ -9,9 +9,9 @@ and call describe_user() and show_privileges() to verify everything works correc
 
 class User:
     def __init__(self,firs_name:str,last_name:str,email:str):
-        self.first_name=firs_name
-        self.last_name=last_name
-        self.email=email
+            self.first_name=firs_name
+            self.last_name=last_name
+            self.email=email
 
     def describe_user(self):
         return f"I dati dell'utente sono: {self.first_name},n\{self.last_name}\n{self.email}"
@@ -19,7 +19,7 @@ class User:
     def greet_users(self):
         return f"Benvenuto/a {self.first_name},{self.last_name}{self.email}"
     
-persona:User=("Valentina","Bologna","valebolo@gmail.com")
+
 
 class Privileges:
 
@@ -33,7 +33,12 @@ class Privileges:
 impronta:Privileges=Privileges("impronta digitale")
     
 class Admin(User,Privileges):
-    def __init__(self,persona:str,impronta:str):
-        self.persona=persona
-        self.impronta=impronta
+    def __init__(self,user:str,privileges:str):
+        self.user=user
+        self.privileges=privileges
 
+    
+
+    
+        
+        
