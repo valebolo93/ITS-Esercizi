@@ -15,15 +15,15 @@ class User:
             self.email=email
 
     def describe_user(self):
-        return f"I dati dell'utente sono: Nome:{self.first_name},n\Cognome: {self.last_name}, n\Username: {self.username}n\email: {self.email}"
+        print(f"I dati dell'utente sono: Nome:{self.first_name},\nCognome: {self.last_name}, \nUsername: {self.username}\nemail: {self.email}")
     
     def greet_users(self):
-        return f"Benvenuto/a  {self.username}"
+        print(f"Benvenuto/a  {self.username}")
 
 
 class Privileges:
 
-    def __init__(self,privileges:str)->str:
+    def __init__(self,privileges:str):
         self.privileges=privileges
     
 
@@ -32,8 +32,8 @@ class Privileges:
             print(f"{element}")
     
     
-class Admin(User,Privileges):
-    def __init__(self,user:str,privileges:str):
+class Admin:
+    def __init__(self,user:User,privileges:Privileges):
         self.user=user
         self.privileges=privileges
 
