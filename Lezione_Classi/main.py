@@ -9,4 +9,4 @@ capo:Privileges=Privileges("Login by impronta digitale")
 print(capo)
 
 admin10=Admin(persona,capo)
-admin10.
+print(admin10)

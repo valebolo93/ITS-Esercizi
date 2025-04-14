@@ -8,29 +8,29 @@ In a separate file main.py, import the classes, create a User and a Privileges i
 and call describe_user() and show_privileges() to verify everything works correctly.'''
 
 class User:
-    def __init__(self,first_name:str,last_name:str,email:str):
+    def __init__(self,first_name:str,last_name:str,username:str,email:str):
             self.first_name=first_name
             self.last_name=last_name
+            self.username=username
             self.email=email
 
     def describe_user(self):
-        return f"I dati dell'utente sono: {self.first_name},n\{self.last_name}\n{self.email}"
+        return f"I dati dell'utente sono: Nome:{self.first_name},n\Cognome: {self.last_name}, n\Username: {self.username}n\email: {self.email}"
     
     def greet_users(self):
-        return f"Benvenuto/a {self.first_name},{self.last_name}{self.email}"
-    
+        return f"Benvenuto/a  {self.username}"
 
 
 class Privileges:
 
-    def __init__(self,lista_privilegi:list)->list:
-        self.lista_privilegi=lista_privilegi
-        lista_privilegi:list=["accesso diretto","visualizza file", "copia hard disk"]
-
-    def show_privileges(lista_privilegi:list)->list:
-        return lista_privilegi
+    def __init__(self,privileges:str)->str:
+        self.privileges=privileges
     
-impronta:Privileges=Privileges("impronta digitale")
+
+    def show_privileges(self)->str:
+        for element in self.privileges:
+            print(f"{element}")
+    
     
 class Admin(User,Privileges):
     def __init__(self,user:str,privileges:str):
